@@ -29,11 +29,7 @@ public class Main {
         System.out.println("containing numbers of retrieve= " + retrieveVar);
         System.out.println("containing numbers of remove= " + removeVar);
         System.out.println("*************************************");
-
-
     }
-
-
     public static void main(String[] args) {
 
         ArrayList<MasterStudents> ss1 = new ArrayList<>();
@@ -43,32 +39,23 @@ public class Main {
         Scanner in2 = new Scanner(System.in);
         Scanner in3 = new Scanner(System.in);
         int choice1, choice2,id,  year, month, day, loc = 0;
-
         String name;
         LocalDate adb;
 
         do {
             menu2();
             choice1 = in.nextInt();
-
           switch (choice1)
             {
                 case 1:
                     do{
                         menu1();
                         choice2=in.nextInt();
-
                         switch (choice2) {
                             case 1:
-                                System.out.println("plz enter student inf..");
+                               System.out.println("plz enter student inf..");
                                 System.out.println("enter id: ");
                                 id = in2.nextInt();
-                                for (int i = 0; i < ss1.size(); i++) {
-                                    if (ss1.get(i).getId() == id) {
-                                        System.out.println("invalid id enter another one ..");
-                                        id = in2.nextInt();
-                                    }
-                                }
                                 System.out.println("enter name: ");
                                 name = in3.nextLine();
                                 System.out.println("enter date of birth(1.year,2.month,3.day):  ");
@@ -87,12 +74,6 @@ public class Main {
                                 System.out.println("plz enter student inf..");
                                 System.out.println("enter id: ");
                                 id = in2.nextInt();
-                                for (int i = 0; i < ss2.size(); i++) {
-                                    if (ss2.get(i).getId() == id) {
-                                        System.out.println("invalid id enter another one ..");
-                                        id = in2.nextInt();
-                                    }
-                                }
                                 System.out.println("enter name: ");
                                 name = in3.nextLine();
                                 System.out.println("enter date of birth(1.year,2.month,3.day):  ");
@@ -111,12 +92,6 @@ public class Main {
                                 System.out.println("plz enter student inf..");
                                 System.out.println("enter id: ");
                                 id = in2.nextInt();
-                                for (int i = 0; i < ss3.size(); i++) {
-                                    if (ss3.get(i).getId() == id) {
-                                        System.out.println("invalid id enter another one ..");
-                                        id = in2.nextInt();
-                                    }
-                                }
                                 System.out.println("enter name: ");
                                 name = in3.nextLine();
                                 System.out.println("enter date of birth(1.year,2.month,3.day):  ");
@@ -136,7 +111,6 @@ public class Main {
                                 System.out.println("Choose again.");
                                 break;
                         }
-
                     }while (choice2!=4);
                     break;
                 case 2:
@@ -179,12 +153,9 @@ public class Main {
                             default:
                                 System.out.println("Not a Valid Choice.");
                                 System.out.println("Choose again.");
-
                         }
-
                     }while (choice2!=4);
                     break;
-
                 case 3:
                     do{
                         menu1();
@@ -228,14 +199,9 @@ public class Main {
                             default:
                                 System.out.println("Not a Valid Choice.");
                                 System.out.println("Choose again.");
-
                         }
-
                     }while (choice2!=4);
                     break;
-
-
-
                 case 4:
                      report(Students.addVar,
                              Students.retrieveVar,
@@ -249,18 +215,12 @@ public class Main {
                     System.out.println(" all engineering students=>");
                     System.out.println(ss3);
                     break;
-
                 case 6:
-
                     break;
-
                 default:
                     System.out.println("Not a Valid Choice.");
                     System.out.println("Choose again.");
                     break;
             }
-
         }while (choice1 !=6);
-
-
         }}
