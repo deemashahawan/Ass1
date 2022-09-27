@@ -12,6 +12,7 @@ public class MasterStudents extends Students{
         this.superVisor=superVisor;
 
     }
+
     public void submitResearch(String txt){
          research=txt;
     }

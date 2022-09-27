@@ -58,7 +58,7 @@ public class Students {
             return false;
         }
         Students temp=(Students) obj;
-        if ((this.id==temp.id)&&(this.name==temp.name)&&(this.adb==temp.adb))
+        if ((this.name==temp.name)&&(this.adb==temp.adb))
             return true;
         else
             return false;
